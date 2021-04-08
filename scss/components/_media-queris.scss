@@ -1,0 +1,36 @@
+@media screen and (max-width:800px) {
+    header{
+        .contenedor{
+            flex-direction: column;
+            text-align: center;
+        }
+        .logotipo{
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+    }
+    .pelicula-principal{
+        font-size: 14px;
+        .descripcion{
+            max-width: 100%;
+        }
+    }   
+
+    .peliculas-recomendadas{
+        .contenedor-carousel{
+            overflow: visible;
+            .carousel{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+        .indicadores,.flecha-izquierda,.flecha-derecha{
+            display: none;
+        }
+    }
+
+    .boton{
+        margin-bottom: 5px;
+    }
+}
